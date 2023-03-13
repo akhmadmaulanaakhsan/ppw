@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pengisian Database Alumni SMANSA '59</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        body {
+			background: url(smansabg.jpg);
+            background-size: 50%;
+        }
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 50px;
+			border: 1px solid #181919;
+			border-radius: 10px;
+			font-family: Helvetica, sans-serif;
+			background-color: #f2f2f2;
+		}
+		label {
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+			margin-bottom: 5px;
+            
+		}
+		input[type="text"], input[type="email"], select {
+			width: 100%;
+			padding: 7px;
+			border: 1px solid #535353;
+			border-radius: 5px;
+			font-size: 16px;
+			margin-bottom: 15px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #0298ca;
+			color: #f8f8f8;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #001a38;
+		}
+	</style>
+</head>
+<body>
+    <center>
+        <img src="Logo_osis.jpg" width="300" height="320">
+    </center>
+
+	<form action="#" method="post">
+        <center>
+        <h1>Form Pengisian Database Alumni SMANSA '59</h1>
+        </center>
+        <br>
+		<label for="nama-depan">Nama Lengkap*</label>
+		<input type="text" id="nama-depan" name="nama-depan" placeholder="First Name" required>
+		<input type="text" id="nama-belakang" name="nama-belakang" placeholder="Last Name" required>
+
+		<label for="jurusan">Jurusan kelas 12*</label>
+		<select id="jurusan" name="jurusan" required>
+			<option value="">- Pilih Jurusan -</option>
+			<option value="MIPA">MIPA</option>
+			<option value="IIS">IIS</option>
+			<option value="IBB">IBB</option>
+		</select>
+
+		<label for="telepon">Nomor Telepon</label>
+		<input type="tel" id="telepon" name="telepon" pattern="^\+(?:[0-9]●?){6,14}[0-9]$" placeholder="+62xxxxxxxxxx">
+        <br>
+        <br>
+
+		<label for="alamat-rumah1">Alamat*</label>
+		<input type="text" id="alamat-rumah1" name="alamat-rumah1" placeholder="Alamat Rumah" required>
+		<input type="text" id="kota" name="kota" placeholder="Kota" required>
+		<input type="text" id="provinsi" name="provinsi" placeholder="Provinsi" required>
+		<input type="text" id="kodepos" name="kodepos" placeholder="Kode Pos" required>
+		<input type="text" id="negara" name="negara" placeholder="Country" required>
+        <label for="tanggal-lahir">Tanggal Lahir*</label>
+        <select id="bulan" name="bulan" required>
+            <option value="">- Pilih Bulan -</option>
+            <option value="01">Januari</option>
+            <option value="02">Februari</option>
+            <option value="03">Maret</option>
+            <option value="04">April</option>
+            <option value="05">Mei</option>
+            <option value="06">Juni</option>
+            <option value="07">Juli</option>
+            <option value="08">Agustus</option>
+            <option value="09">September</option>
+            <option value="10">Oktober</option>
+            <option value="11">November</option>
+            <option value="12">Desember</option>
+        </select>
+        <input type="number" id="tanggal" name="tanggal" min="1" max="31" placeholder="Tgl" required>
+        <input type="number" id="tahun" name="tahun" min="1900" max="9999" placeholder="Thn" required>
+        <br><br>
+    
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+    
+        <label for="pendidikan">Pendidikan Terakhir/Tahun Tamat</label>
+        <input type="text" id="pendidikan" name="pendidikan" placeholder="Contoh: D4 Akuntansi Sektor Publik STAN / 2026">
+    
+        <label for="pekerjaan">Pekerjaan saat ini</label>
+        <input type="text" id="pekerjaan" name="pekerjaan" placeholder="Contoh: Pengusaha">
+    
+        <label for="info-tambahan">Tambahan Info yang ingin di share kepada sesama Alumni</label>
+        <textarea id="info-tambahan" name="info-tambahan" rows="4" placeholder="Bisa diisi dengan status, hobby, media sosial info, dll."></textarea>
+    
+        <label for="foto">Add Photo*</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required> 
+        <br>
+        <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+    
+  
