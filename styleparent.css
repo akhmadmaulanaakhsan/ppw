@@ -1,0 +1,36 @@
+.container {
+    display: flex; 
+    column-gap: 20px;
+    background-color: DodgerBlue;
+    flex-wrap: wrap; /* atau nowrap atau wrap-reverse */
+    width: 570px;
+    
+}
+
+.container div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
+    height: 75px;
+    font-size: 30px;
+}
+
+.container div.satu {
+    width: 125px;
+}
+
+.container div.dua {
+    width: 75px;
+}
+
+.container div.tiga {
+    width: 105px;
+}
+
+.container div.empat {
+    width: 155px;
+}
+
+.container div.lima {
+    width: 185px;
+}
